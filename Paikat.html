@@ -379,9 +379,8 @@ function start() {
       'path': 'https://sheets.googleapis.com/v4/spreadsheets/1HuAX0mJoA1WBoEDWwdKagYi4HEXtkQwBLppD-UOnnrs/values/A2%3AE',
     })
   }).then(function(response) {
+		console.log(response.result);
 		SetVar(response.result);
-    	console.log(response.result);
-		console.log("DEBUG")
   }, function(reason) {
     console.log('Error: ' + reason.result.error.message);
   });
