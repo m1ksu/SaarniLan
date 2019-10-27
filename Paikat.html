@@ -380,8 +380,8 @@ function start() {
     })
   }).then(function(response) {
 		SetVar(response.result);
-
-    console.log(response.result)	;
+    	console.log(response.result);
+		console.log("DEBUG")
   }, function(reason) {
     console.log('Error: ' + reason.result.error.message);
   });
