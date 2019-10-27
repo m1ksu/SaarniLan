@@ -376,7 +376,7 @@ function start() {
   }).then(function() {
     // 3. Initialize and make the API request.
     return gapi.client.request({
-      'path': 'https://sheets.googleapis.com/v4/spreadsheets/1HuAX0mJoA1WBoEDWwdKagYi4HEXtkQwBLppD-UOnnrs/values/A2%3AG',
+      'path': 'https://sheets.googleapis.com/v4/spreadsheets/1HuAX0mJoA1WBoEDWwdKagYi4HEXtkQwBLppD-UOnnrs/values/A2%3AH',
     })
   }).then(function(response) {
 		console.log(response.result);
@@ -401,11 +401,11 @@ function SetVar(range) {
 		for (i = 0; i < range.values.length; i++) {
 			var row = range.values[i];
 			
-			if(row[0] === "Ei") {
+			if(row[5] === "Ei") {
 				break;
 			}
 
-			appendPre(row[1], row[2], row[3], row[4]);
+			appendPre(row[6], row[1], row[7], row[2]);
 		}
 	} else {
 		appendPre('No data found.');
