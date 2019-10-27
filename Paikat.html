@@ -376,7 +376,7 @@ function start() {
   }).then(function() {
     // 3. Initialize and make the API request.
     return gapi.client.request({
-      'path': 'https://sheets.googleapis.com/v4/spreadsheets/1HuAX0mJoA1WBoEDWwdKagYi4HEXtkQwBLppD-UOnnrs/values/A2%3AE?key=AIzaSyC6s8MIwYfSdEyALq5CsYgANxl44KIY2Pc',
+      'path': 'https://sheets.googleapis.com/v4/spreadsheets/1HuAX0mJoA1WBoEDWwdKagYi4HEXtkQwBLppD-UOnnrs/values/A2%3AE',
     })
   }).then(function(response) {
 		SetVar(response.result);
