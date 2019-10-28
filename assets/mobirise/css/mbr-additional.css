@@ -2096,6 +2096,7 @@ body {
 .cid-qxAo7hCpq2 .rows--mini .row__seat--reserved,
 .cid-qxAo7hCpq2 .rows--mini .row__seat--reserved:hover {
   background: #de6363;
+  font-size: 11px;
 }
 .cid-qxAo7hCpq2 .legend__item--selected::before,
 .cid-qxAo7hCpq2 .rows--mini .row__seat--selected,
