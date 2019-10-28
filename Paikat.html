@@ -403,7 +403,7 @@ function SetVar(range) {
 		var row = range.values[i];
 			console.log(range.values[i]);
 			if(row[5] === "Ei") {
-				break;
+				continue;
 			}
 
 			appendPre(row[6], row[1], row[7], row[2]);
